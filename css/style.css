@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: rgb(77, 234, 255);
+
+    --main-text: rgb(95, 95, 95);
+    --main-background-image: linear-gradient(to right , rgb(0, 166, 255) , rgb(0, 255, 221));
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -30px;
+    background-image: var(--main-background-image);
+    color: var(--main-text);
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 100px;
+
+    #text {
+        font-size: 20px;
+        color: var(--main-text);
+        letter-spacing: 2px;
+    }
+}
+input {
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 9999px;
+    font-size: 18px;
+    color: var(--main-text);
+    padding: 0 10px 0 10px;
+}
+input:focus {
+    outline: none;
+}
+
+#click {
+    padding: 10px;
+    margin-top: 70px;
+    width: 100px;
+    border: none;
+    background-color: rgb(4, 181, 230);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 18px;
+}
+
+
+
+.outPut {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid rgb(0, 199, 136);
+    position: relative;
+    margin-top: 20px;
+}
+
+.titleValue {
+    color: rgb(6, 94, 120);
+}
+
+.contentValue {
+    padding-left: 20px;
+}
+
+.exit {
+    position: absolute;
+    right: 20px;
+    top: 45%;
+    color: red;
+}
+
+@media (max-width: 620px) {
+    .input {
+       width: 100%; 
+       flex-direction: column;
+       gap: 20px;
+    } 
+    .input > div {
+        width: 100%;
+    }
+    input {
+        border-radius: 0;
+        width: 95%;
+        height: 50px;
+        font-size: 18px;
+    }
+    header {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+
+}
